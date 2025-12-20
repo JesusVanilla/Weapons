@@ -1,0 +1,45 @@
+﻿{
+	"version": "1.0",
+	"author": "JesusVanilla",
+	
+	"name":  {
+		"en": "Weapons",
+		"de": "Waffen"
+	},
+
+	"description": {
+		"en": "Adds more weapons to the tech tree and rebalance some combat items",
+		"de": "Fügt dem Technologiebaum weitere Waffen hinzu und passt einige Kampfgegenstände an"
+	},
+
+	"messages" : [
+		{
+			"content" :  {
+				"en" : "This mod is changing the techtree and is not compatible with savegames with another techtree. After installing this mod, please start a new game",
+				"de" : "Diese Mod ändert den Technologiebaum und ist nicht kompatibel mit Spielständen mit einem anderen Technologiebaum. Bitte starten Sie ein neues Spiel nach der Installation dieser Mod"
+			}
+		},
+		{
+			"content":  {
+				"en": "This mod is not compatible with some other mods that also modify the techtree. List of incompatible mods: “Rare Resources”, “StoneDoor” (I hope to resolve this issue in the future)",
+				"de": "Dieser Mod ist mit einigen anderen Mods nicht kompatibel, die ebenfalls den Techtree verändern. Liste der inkompatiblen Mods: „Seltene Ressourcen“, „Steintör“ (Ich hoffe, dieses Problem in Zukunft lösen zu können)"
+			}
+		}
+	],
+
+	"settings": [
+		{
+			"id": "SELF_DESTRUCTING_TRAPS",
+			"type": "bool",
+			"default": true,
+			"name":  {
+				"en": "Self-Destructing Traps",
+				"de": "Selbstzerstörende Fallen"
+			},
+			"description": {
+				"en": "Traps take damage when they trigger",
+				"de": "Fallen erleiden Schaden, wenn sie ausgelöst werden"
+			}
+		}
+	]
+}
