@@ -1,12 +1,5 @@
 $start
 $replace
-fight_weapon none				0.2		0.2		1.0		kungfu		exp_F_Kungfu	2.5		0
-$with
-fight_weapon none				0.2		0.2		1.0		kungfu		exp_F_Kungfu	5		0
-$end
-
-$start
-$replace
 fight_weapon Steinschleuder 	0.3 	0.0 	6.0		ballist		exp_F_Ballistic	2 		0			katschi  	{ 13 }
 fight_weapon PfeilUndBogen 		0.75 	0.0 	9.0		ballist		exp_F_Ballistic	1.5 	0.04		bogen       { 9 }
 fight_weapon Buechse 			1.2 	0.0 	15.0	ballist		exp_F_Ballistic	1 		0.1         flinte      { -1 4 }

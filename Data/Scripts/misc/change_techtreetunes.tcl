@@ -16,13 +16,11 @@ $with
 $end
 
 $start
-$replace
-		set tttitems_Steinmetz				{Grenzstein Steinschleuder Grabstein Keule Plattmachfalle Schmiede Schmelze}
-$with
-		set tttitems_Steinmetz				{Grenzstein Steinschleuder Grabstein Keule Schild Schmiede Schmelze}
+$after
+Grabstein Keule 
+$put
+Schild 
 $end
-
-
 
 $start
 $before
@@ -80,10 +78,10 @@ $put
 $end
 
 $start
-$replace
-		set tttitems_Dampfhammer			{Abfluss Dampfaufzug Hochofen Schleiferei Metalltuer Kristallschmiede}
-$with
-		set tttitems_Dampfhammer			{Schwert_1 Schild_2 Axt_2 Abfluss Dampfaufzug Hochofen Schleiferei Metalltuer Kristallschmiede}
+$after
+set tttitems_Dampfhammer			{
+$put
+Schwert_1 Schild_2 Axt_2 
 $end
 
 
@@ -103,22 +101,22 @@ $put
 		set tttgain_Schwert_3				{{exp_Metall 0.05}}
 		set tttinfluence_Schwert_3			{{exp_Metall 0.5}}
 	}
+	"FireMine" {
+		set tttmaterial_FireMine			{Kohle Kohle Eisen}
+		set tttinvent_FireMine		 		{{exp_Metall 0.12} {exp_Kampf 0.06}}
+		set tttgain_FireMine				{{exp_Metall 0.01} {exp_Energie 0.004}}
+		set tttinfluence_FireMine		  	{{exp_Metall 0.2}}
+	}
 
 $end
 
 $start
 $replace
-	"Plattmachfalle" {
 		set tttmaterial_Plattmachfalle		{Stein Stein Stein Stein Stein Pilzstamm}
 		set tttinvent_Plattmachfalle		{{exp_Stein 0.089} {exp_Kampf 0.019}}
-		set tttgain_Plattmachfalle			{{exp_Stein 0.02}}
-		set tttinfluence_Plattmachfalle		{{exp_Stein 0.3}}
 $with
-	"Plattmachfalle" {
-		set tttmaterial_Plattmachfalle		{Stein Stein Stein Stein Stein Pilzstamm Eisen Eisen}
-		set tttinvent_Plattmachfalle		{{exp_Metall 0.06} {exp_Stein 0.16} {exp_Kampf 0.12}}
-		set tttgain_Plattmachfalle			{{exp_Stein 0.02} {exp_Metall 0.01}}
-		set tttinfluence_Plattmachfalle		{{exp_Stein 0.3} {exp_Metall 0.1}}
+		set tttmaterial_Plattmachfalle		{Stein Stein Golderz Stein Stein Pilzstamm}
+		set tttinvent_Plattmachfalle		{{exp_Stein 0.12} {exp_Kampf 0.06}}
 $end
 
 $start
@@ -129,13 +127,11 @@ $with
 $end
 
 $start
-$replace
-		set tttitems_Waffenschmiede			{Schwert PfeilUndBogen Metallschild Waffenfabrik}
-$with
-		set tttitems_Waffenschmiede			{Schwert PfeilUndBogen Metallschild Schwert_3 Axt_3 Plattmachfalle Waffenfabrik}
+$after
+PfeilUndBogen Metallschild 
+$put
+Schwert_3 Axt_3 FireMine 
 $end
-
-
 
 $start
 $before
@@ -163,11 +159,23 @@ $put
 $end
 
 $start
+$before
+Lichtschwert Kristallschild
+$put
+Schild_3 
+$end
+
+$start
+$after
+Lichtschwert Kristallschild
+$put
+ Schwert_4 Axt_4
+$end
+
+$start
 $replace
-		set tttitems_Waffenfabrik			{Buechse Lichtschwert Kristallschild}
 		set tttpreinv_Waffenfabrik			{Buechse}
 $with
-		set tttitems_Waffenfabrik			{Buechse Schild_3 Lichtschwert Kristallschild Schwert_4 Axt_4}
 		set tttpreinv_Waffenfabrik			{Schild_3}
 $end
 
