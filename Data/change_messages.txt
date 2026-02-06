@@ -1,0 +1,18 @@
+$start
+$before
+## "Plattmachfalle"
+$put
+
+## "FireMine"
+en "Fire Mine"
+de "Feuermine"
+cz "Ohnivá mina"
+fr "Mine incendiaire"
+es "Mina incendiaria"
+it "Mina incendiaria"
+nl "Brandmijn"
+pl "Mina zapalająca"
+ru "Огненная мина"
+
+
+$end
